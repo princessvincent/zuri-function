@@ -29,31 +29,29 @@ h5 {
 
 section a {
     display: block;
-    color: #2977c9;
+    color: #2867B2;
     font-size: 1.2rem;
     text-decoration: none;
     margin-bottom: 2rem;
 }
 
 section i {
-    color: #2977c9;
-    font-size: 1.3rem;
-    padding-left: 0.45rem;
-    position: relative;
-    top: 3px;
+    color: #2867B2;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
 }
 
 header {
+    background-color: #FAF9F7;
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 3rem; */
+    align-items: center;
     padding: 2rem 5rem;
-    box-shadow: 0 0 0 3px #2977c9;
 }
 
 .header-logo {
     color: #2977c9;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .header-logo span {
@@ -73,36 +71,55 @@ header {
 
 .nav a {
     display: inline-block;
-    color: #2977c9;
-    padding: 0 1rem;
+    color: #0B0A0A;
+    padding: 0 2rem;
     text-decoration: none;
 }
 
-.nav-bar {
+.nav a:hover {
     color: #2977c9;
-    font-size: 1.3rem;
+}
+
+.nav-bar {
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
 .nav-bar span {
-    border: 1px solid #2977c9;
-    /* background-color: #2977c9; */
+    /* border: 1px solid #2977c9; */
     color: #2977c9;
     padding: 0.7rem 2rem 0.9rem 2rem;
+    border-radius: 6px;
+}
+
+.nav-bar .header-join-now {
+    background-color: #2977c9;
+    color: #FAF9F7;
+}
+
+.nav-bar .header-sign-in {
+    border: 1px solid #2977c9;
+}
+
+span.registration-box a {
+    display: inline;
+    padding: 0 0.5rem;
+    border: none;
 }
 
 /* Header section ends */
 
 section.hero-section {
+    background-color: #FAF9F7;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid black;
-    margin-bottom: 17rem;
-    padding: 5rem 2rem 17rem 2rem;
+    justify-content: space-evenly;
+    padding: 7rem 5rem 8rem 5rem;
+    position: relative;
 }
 
-section.hero-section .hero-intro{
-    border: 1px solid red;
+section.hero-section .hero-content {
     width: 50%;
+    padding-top: 5rem;
 }
 
 section.hero-section h1 {
@@ -117,18 +134,35 @@ section.hero-section p {
     width: 70%;
 }
 
+section.hero-section .hero-cta {
+    font-size: 1.05rem;
+    margin-top: 5rem;
+    padding: 0.9rem 2.3rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+section.hero-section .join-now {
+    background-color: #2977c9;
+    color: #FAF9F7;
+}
+
+section.hero-section .sign-in {
+    background-color: transparent;
+    border: 1px solid #2977c9;
+    color: #2977c9;
+    margin-left: 1rem;
+}
+
 section.hero-section .hero-img{
-    border: 1px solid purple;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 /* Hero section ends */
 
 section.feature-section {
-    background-color: hsl(201, 100%, 98%);
-    /* border: 1px solid red; */
-    margin-bottom: 10rem;
-    padding: 2rem 3rem;
+    background-color: #F1ECE5;
+    padding: 10rem 3rem 10rem 3rem;
 }
 
 div.feature-intro {
@@ -141,7 +175,8 @@ div.feature-intro p {
     font-size: 1.2rem;
     width: 40%;
     margin: 0 auto;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5;
 }
 
 div.feature-boxes {
@@ -156,51 +191,27 @@ div.feature-boxes div {
     padding: 2rem;
     margin: 3rem;
     width: 22%;
-    box-shadow: 0 5px 60px 0 hsl(199, 100%, 93%),
-                0 2px 7px 0 hsl(209, 14%, 80%);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.35s ease-out;
+}
+
+div.feature-boxes div:hover {
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
 }
 
 div.feature-boxes p {
     font-size: 1.1rem;
     padding: 1rem 0;
-    margin-bottom: 3rem;
+    margin: 1.5rem 0;
 }
 
 /* feature section ends */
 
-section.user-story-section {
-    /* border: 1px solid purple; */
-    margin: 3rem 0 5rem 0;
-    padding: 4rem 3rem;
-}
-
-div.user-story {
-    display: flex;
-    justify-content: center;
-    padding: 5rem 0 2rem 0;
-}
-
-div.user-story .box {
-    /* border: 1px solid black; */
-    padding: 2rem;
-    margin: 3rem;
-    width: 18%;
-    border-radius: 10px;
-    box-shadow: 1px 7px 10px 0 hsla(208, 16%, 93%, 0.7),
-                0px 2px 6px 0 rgba(0, 0, 0, 0.1);
-}
-
-div.user-story p {
-    padding: 1rem 0;
-    margin-bottom: 5rem;
-}
-
-/* user story section ends */
-
 section.job-section {
-    background-color: hsl(201, 100%, 98%);
-    margin-bottom: 14rem;
-    padding: 3rem 0;
+    background-color: #F4FAFF;
+    padding: 13rem 0 10rem 0;
 }
 
 section.job-section p {
@@ -211,10 +222,10 @@ section.job-section p {
 }
 
 div.job-industry {
-    /* border: 1px solid black; */
     width: 70%;
     margin: 0 auto;
     padding: 5rem 2rem;
+    text-align: center;
 }
 
 div.job-industry span {
@@ -222,8 +233,14 @@ div.job-industry span {
     display: inline-block;
     font-size: 1.2rem;
     margin: 2rem;
-    padding: 0.7rem 2rem;
     border: 1px solid #2977c9;
+    border-radius: 8px;
+    transition: background-color 0.1s ease-in;
+}
+
+div.job-industry span:hover {
+    background-color: #2977c9;
+    color: #F4FAFF;
 }
 
 section.job-section a {
@@ -235,17 +252,20 @@ section.job-section a {
     text-align: end;
     border: 1px solid #2977c9;
     border-radius: 40px;
-    box-shadow: 5px 7px 20px hsla(209, 14%, 80%, 0.9),
-                2px 3px 8px rgba(0, 0, 0, 0.5);
-    /* box-shadow: 3px 10px 20px 0 hsla(211, 13%, 63%, 0.7); */
+    box-shadow: 2px 3px 20px hsla(209, 14%, 80%, 0.9),
+                1px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.35s ease-out;
+}
+
+section.job-section a:hover {
+    box-shadow: none;
 }
 
 /* job section ends */
 
 section.call-to-action {
-    /* border: 1px solid black; */
     text-align: center;
-    padding-bottom: 17rem;
+    padding: 15rem 0 20rem 0;
 }
 
 section.call-to-action p {
@@ -256,23 +276,25 @@ section.call-to-action p {
 }
 
 section.call-to-action .email {
-    /* border: 1px solid red; */
     width: 60%;
     margin: 4rem auto;
     position: relative
 }
 
 section.call-to-action input {
-    /* color: hsl(0, 0%, 37%); */
     color: #2977c9;
     font-size: 1.15rem;
     width: 65%;
     padding: 1.7rem 3rem;
     outline: none;
     border: 1px solid transparent;
-    border-radius: 60px;
-    box-shadow: 5px 8px 20px 0 hsla(209, 14%, 80%, 0.5),
-                0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.25s ease-in;
+}
+
+section.call-to-action input:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 section.call-to-action button {
@@ -286,7 +308,7 @@ section.call-to-action button {
     outline: none;
     letter-spacing: 0.03rem;
     border: 1px solid #2977c9;
-    border-radius: 40px;
+    border-radius: 7.5px;
 }
 
 ::placeholder {
@@ -297,8 +319,8 @@ section.call-to-action button {
 /* call to action section ends */
 
 footer {
-    background-color: #2977c9;
-    color: white;
+    background-color: #2867B2;
+    color: #FAFAF7;
     width: 100%;
     padding: 4rem 0 2rem 0;
     position: relative;
@@ -308,22 +330,28 @@ footer {
   div.top-footer {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 2px solid white;
   }
 
   .footer-heading span {
     background-color: white;
     color: #2977c9;
     margin-left: 0.1rem;
+    padding: 0 0.1rem;
     border: 1px solid white;
+  }
+
+  .footer-heading + span {
+      display: block;
+      padding-top: 1rem;
+      font-size: 0.8rem;
   }
 
   h5.footer-heading {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  div.company-link, div.top-footer p {
+ div.top-footer p {
     margin: 1rem 0;
   }
 
@@ -331,11 +359,5 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-  }
-
-  div.bottom-footer {
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 2rem;
   }
 

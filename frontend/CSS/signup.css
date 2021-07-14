@@ -11,6 +11,7 @@ html {
     font-size: 16px;
 }
 
+
 h2 {
     text-transform: capitalize;
     text-align: center;
@@ -29,32 +30,29 @@ h5 {
 
 section a {
     display: block;
-    color: #2977c9;
+    color: #2867B2;
     font-size: 1.2rem;
     text-decoration: none;
     margin-bottom: 2rem;
 }
 
 section i {
-    color: #2977c9;
-    font-size: 1.3rem;
-    padding-left: 0.45rem;
-    position: relative;
-    top: 3px;
+    color: #2867B2;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5rem;
-    padding: 1rem 5rem;
-    box-shadow: 0 0 0 3px #2977c9;
+    padding: 2rem 5rem;
+    box-shadow: 0 2px 10px #FAF9F7;
 }
 
 .header-logo {
     color: #2977c9;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .header-logo span {
@@ -74,51 +72,70 @@ header {
 
 .nav a {
     display: inline-block;
-    color: #2977c9;
+    color: #0B0A0A;
     padding: 0 2rem;
     text-decoration: none;
 }
 
-.nav-bar {
+.nav a:hover {
     color: #2977c9;
-    font-size: 1.1rem;
+}
+
+.nav-bar {
+    font-size: 1.05rem;
+    font-weight: 600;
 }
 
 .nav-bar span {
-    display: inline-block;
-    border: 1px solid #2977c9;
     color: #2977c9;
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 2rem 0.9rem 2rem;
+    border-radius: 6px;
+}
+
+.nav-bar .header-join-now {
+    background-color: #2977c9;
+    color: #FAF9F7;
+}
+
+.nav-bar .header-sign-in {
+    border: 1px solid #2977c9;
+}
+
+span.registration-box a {
+    display: inline;
+    padding: 0 0.5rem;
+    border: none;
 }
 
 /* Header section ends */
 
 .form-section {
     background-color: #F3F9FF;
-    border: 1px solid white;
-    width: 45%;
-    margin: 5rem auto 17rem auto;
-    padding: 2rem 4rem;
+    border: 1px solid #F3F9FF;
+    width: 50%;
+    margin: 8rem auto 17rem auto;
+    padding: 3rem 5rem;
+    box-shadow: 0 -5px #2977c9;
 }
 
 .form-section h1 {
     color: #655FE3;
     font-size: 2.8rem;
     font-weight: 600;
-    padding: 1rem 0;
+    padding: 2rem 0 3rem 0;
     margin-bottom: 5rem;
     letter-spacing: 0.03rem;
+    text-align: center;
 }
 
 .form-section span {
     background-color: #655FE3;
     color: #F3F9FF;
-    /* margin-left: 0.1rem; */
+    padding: 0 0.1rem;
     border: 1px solid #655FE3;
 }
 
 section.input-section {
-    /* border: 1px solid red; */
     margin-bottom: 7rem;   
 }
 
@@ -128,24 +145,27 @@ section.input-section div {
 
 section.input-section label {
     color: #0068B8;
-    /* color: #002C70; */
     display: block;
     font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 1rem;
     cursor: pointer;
-    /* padding-left: 1rem; */
 }
 
 section.input-section input {
     color: #7483C3;
-    border: 1px solid white;
     font-size: 1.05rem;
     width: 100%;
     margin: 0 auto;
     padding: 1.2rem 1rem;
     outline: none;
+    border: 1px solid #F3F9FF;
     border-radius: 6px;
+    transition: box-shadow 0.35s ease-in;
+}
+
+section.input-section input:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.03);
 }
 
 ::placeholder {
@@ -167,6 +187,7 @@ div.submit-section button {
     padding: 1.1rem 0;
     letter-spacing: 0.05rem;
     border: 1px solid #2977c9;
+    cursor: pointer;
 }
 
 .form-section aside {
@@ -174,14 +195,19 @@ div.submit-section button {
     justify-content: center;
     font-size: 1.05rem;
     margin-bottom: 3rem;
-    letter-spacing: 0.03rem;
-    word-spacing: 0.1rem;
+    word-spacing: 0.3rem;
 }
 
 .form-section a {
     color: #2977c9;
-    font-weight: 700;
-    padding-left: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.7rem;
+    padding-bottom: 0.2rem;
     text-decoration: none;
     letter-spacing: 0.05rem;
+    transition: font-size 0.1s ease-in;
+}
+
+.form-section a:hover { 
+   font-size: 1.1rem;
 }
